@@ -66,3 +66,36 @@ export const vacation = [
         image: '/Images/Japan.png',
     },
 ]
+
+export const blog = [
+   {
+    id:1,
+    text: 'The Amazing Difference a Year of Travelling .',
+    date: 'July 27, 2021',
+    image: '/Images/building.png',
+   },
+   {
+    id:2,
+    text: 'Travel far enough, you meet yourself.',
+    date: 'July 27, 2021',
+    image: '/Images/seaVacation.png',
+   },
+   {
+    id:3,
+    text: 'How to save Money When Visiting Africa .',
+    date: 'July 27, 2021',
+    image: '/Images/hotel.png',
+   },
+   {
+    id:4,
+    text: 'Reflections on 5 Months of Travel: Time to Hang.',
+    date: 'July 27, 2021',
+    image: '/Images/mountain.png',
+   },
+   {
+    id:5,
+    text: 'The Amazing Difference a Year of Travelling .',
+    date: 'July 27, 2021',
+    image: '/Images/building.png',
+   }
+]

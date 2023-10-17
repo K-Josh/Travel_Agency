@@ -7,6 +7,7 @@ import ToDo from "./pages/ToDo"
 import Booking from "./pages/Booking"
 import Tour from "./pages/Tour"
 import About from "./pages/About"
+import Blog from "./pages/Blog"
 
 const App = () => {
 
@@ -18,13 +19,13 @@ const App = () => {
         <Route path="/booking" element={<ToDo />} />
       </Routes>
       <Routes>
-       <Route path="/booking" element={<Booking />}/>
+       <Route path="/destination" element={<Booking />}/>
        <Route path="/tour" element={<Tour />} />
-       <Route path='/about' element={<About />} />
+       <Route path='/testimonials' element={<About />} />
+       <Route path="/blog" element={<Blog />} />
       </Routes>
-
       <Header />
-      <div className="h-[4000px] "></div>
+      {/* <div className="h-[4000px] "></div> */}
     </>
   )
 }

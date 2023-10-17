@@ -1,9 +1,11 @@
 import { Flex, Image, VStack, Text, Box} from "@chakra-ui/react"
 import {   LocationCard, SignupCard, WalletCard } from "../components/Components"
+import Footer from "../components/Footer"
 
 
 const ToDo = () => {
   return (
+  <>
     <Flex justifyContent={'center'} >
      <div className="flex items-center lg:max-h-screen" >
        <Flex justifyContent={"center"} p={{base:3, md:6}}>
@@ -29,6 +31,9 @@ const ToDo = () => {
       </Flex>
      </div>
     </Flex>
+    
+    <Footer />
+    </>
   )
 }
 

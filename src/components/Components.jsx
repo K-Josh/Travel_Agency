@@ -2,7 +2,7 @@ import { Flex, Button, Link, Box, Image, VStack, } from '@chakra-ui/react'
 import { BsFillStarFill, BsArrowLeftCircle, BsArrowRightCircleFill } from 'react-icons/bs'
 import { FaCalendarCheck, FaLocationArrow, } from 'react-icons/fa'
 import { GiWallet } from 'react-icons/gi'
-import { places, vacation } from '../Data/Data'
+import { blog, places, vacation } from '../Data/Data'
 
 export const NavButtons = () => {
   return (
@@ -157,7 +157,7 @@ export const Madrid = () => {
     <Flex justifyContent={'center'} alignItems={'center'} direction={{base:'column', md:'row'}} gap={{base:1,md:5}} >
       {places.map((item, index)=> (
        <div key={index} >
-       <VStack className=' group mt-[12px] lg:mt-[4rem]'>
+       <VStack className=' group mt-[12px] lg:mt-[2rem]'>
         <Box className='group-hover:scale-110 cursor-pointer shadow-sm relative overflow-hidden transition-all duration-500 bg-black'>
          {/* image */}
          <div className='transition-all w-full h-full absolute rounded-md duration-300 z-50 cursor-pointer bg-black'>
@@ -219,11 +219,11 @@ export const Vacation = () => {
   return (
     <>
       <Box mt={{base:8, md:2}} ml={{base:'16rem', md:'45rem'}} cursor={'pointer'} >
-     <Flex gap={4} >
+       <Flex gap={4} >
        <BsArrowLeftCircle className='text-lg lg:text-2xl hover:scale-110 text-gray-icon hover:text-primary-orange' />
        <BsArrowRightCircleFill className='text-primary-orange text-lg lg:text-2xl hover:scale-110'/>
      </Flex>
-    </Box>
+      </Box>
     <Flex justifyContent={'center'} alignItems={'center'} direction={{base:'column', md:'row'}} gap={{base:1,md:5}} >
       {vacation.map((item, index)=> (
        <div key={index} >
@@ -269,6 +269,31 @@ export const Vacation = () => {
     </Flex>
   
     
-  </>
+   </>
+  )
+}
+
+// blog component
+export const BlogSection = () => {
+  return (
+   <>
+    <Flex className='grid grid-cols-3' direction={{base:'column', md:'row' }} gap={4}>
+      {blog.map((item, index) => (
+        <div key={index}>
+          <VStack >
+            <Box className='space-y-4 cursor-pointer  transition-all ease-in-out duration-500 hover:scale-105'>
+              <Image 
+                src={item.image}
+                rounded={'md'}
+                w={{base:'12rem'}}
+              />
+              <p className='w-[12rem] text-[14px]'>{item.text}</p>
+              <p className='text-[12px] text-gray-icon opacity-80'>{item.date}</p>
+            </Box>
+          </VStack>
+        </div>
+      ))}
+    </Flex>
+   </>
   )
 }

@@ -1,5 +1,6 @@
 import { Box, Flex,Image, VStack, Text } from "@chakra-ui/react"
 import { Vacation } from "../components/Components"
+import Footer from "../components/Footer"
 
 
 const Tour = () => {
@@ -16,12 +17,13 @@ const Tour = () => {
             />
          </Box>
          </Flex>
-         <Text fontSize={{base:'sm', md:'md'}}  className="text-center w-[32rem]">Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!  
+         <Text fontSize={{base:'sm', md:'20px'}}  className="text-center w-[32rem]">Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!  
          </Text>
          <Vacation />
         </VStack>
       </Flex>
     
+     <Footer />
     </div>
   )
 }
