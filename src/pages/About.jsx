@@ -1,12 +1,12 @@
 import { Flex, Text, VStack, Box, Avatar, Image, Show } from "@chakra-ui/react"
 import { BsArrowLeftCircle, BsArrowRightCircleFill } from "react-icons/bs"
-import Footer from "../components/Footer"
+
 
 
 const About = () => {
   return (
-    <div className="lg:min-h-screen flex justify-center lg:mx-10 ">
-      <Flex justifyContent={{md:'space-between'}} alignItems={'center'} mb={{md:'8rem'}} direction={{base:'column', md:'row'}} px={{base:3, md:6}} className="space-y-[2rem]  lg:space-x-[5rem] ">
+    <div className="lg:min-h-screen flex justify-center lg:mx-10 mb-[12rem]">
+      <Flex justifyContent={{md:'space-between'}} alignItems={'center'} mb={{md:'8rem'}} direction={{base:'column', md:'row'}} px={{base:3, md:6}} className="space-y-[2rem] lg:space-x-[5rem] ">
         <Flex justifyContent={{md:'start'}}>
          <VStack alignItems={{base:'center', md:'flex-start'}} gap={{md:6}} >
             <Text className="text-lg lg:text-start lg:text-4xl font-bold lg:w-[24rem] ">What people say <span className="text-primary-orange">about us.</span></Text>
@@ -24,6 +24,9 @@ const About = () => {
             src="/Images/planes.png"
             w={{base:'6rem'}}
             alt="planes"
+            position={'absolute'}
+            top={{base:'11rem'}}
+            right={{base:'1rem'}}
           />
           </Show>
         </Flex>
@@ -72,7 +75,6 @@ const About = () => {
          </Show>
       </Flex>
 
-      <Footer />
     </div>
   )
 }

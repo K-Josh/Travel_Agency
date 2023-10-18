@@ -19,7 +19,7 @@ export const PageButton = () => {
   return (
     <>
        {/* buttons */}
-     <Button bg={'orange.orange'} px={{base:4, md:8}}  size={{base:'sm', md:'md'}} _hover={{bg:'orange.400'}} color={'white'}  >Explore Now</Button>
+     <Button bg={'orange.orange'} w={{base:14, md:32}}  size={{base:'xs', md:'md'}} _hover={{bg:'orange.400'}} color={'white'} fontSize={'1'} ><p className='text-[8px]lg:text-[10px]'>Explore Now</p></Button>
     </>
   )
 }
@@ -218,7 +218,7 @@ export const Madrid = () => {
 export const Vacation = () => {
   return (
     <>
-      <Box mt={{base:8, md:2}} ml={{base:'16rem', md:'45rem'}} cursor={'pointer'} >
+      <Box mt={{base:8, md:2}} ml={{base:'12rem', md:'45rem'}} cursor={'pointer'} >
        <Flex gap={4} >
        <BsArrowLeftCircle className='text-lg lg:text-2xl hover:scale-110 text-gray-icon hover:text-primary-orange' />
        <BsArrowRightCircleFill className='text-primary-orange text-lg lg:text-2xl hover:scale-110'/>
@@ -230,7 +230,7 @@ export const Vacation = () => {
        <VStack className=' group mt-[12px] lg:mt-[rem]'>
         <Box className='group-hover:scale-95 cursor-pointer shadow-sm relative overflow-hidden transition-all duration-500 '>
          {/* image */}
-           <Box w={{base:'19rem', md:'20rem'}}  bg={'white'} roundedBottom={'md'} roundedTop={'md'} h={{md:'26rem'}} className='space-y-3 '>
+           <Box w={{base:'15rem', md:'20rem'}}  bg={'white'} roundedBottom={'md'} roundedTop={'md'} h={{md:'26rem'}} className='space-y-3 '>
             <Image 
             src={item.image}
             alt={item.name}
@@ -238,7 +238,7 @@ export const Vacation = () => {
             rounded={'md'}
             w={'fit-content'}
             h={'fit-content'}
-            boxSize={{base:'19rem', md:'20rem'}}
+            boxSize={{base:'15rem', md:'20rem'}}
             className=''
            />
             <Flex color={'black'} py={2} px={4} justifyContent={'space-between'} >
