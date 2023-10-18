@@ -8,6 +8,7 @@ import Booking from "./pages/Booking"
 import Tour from "./pages/Tour"
 import About from "./pages/About"
 import Blog from "./pages/Blog"
+import Footer from "./components/Footer"
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Header />
+      <Footer />
       {/* <div className="h-[4000px] "></div> */}
     </>
   )

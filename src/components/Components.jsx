@@ -1,4 +1,4 @@
-import { Flex, Button, Link, Box, Image, VStack, } from '@chakra-ui/react'
+import { Flex, Button, Link, Box, Image, VStack,  } from '@chakra-ui/react'
 import { BsFillStarFill, BsArrowLeftCircle, BsArrowRightCircleFill } from 'react-icons/bs'
 import { FaCalendarCheck, FaLocationArrow, } from 'react-icons/fa'
 import { GiWallet } from 'react-icons/gi'
@@ -277,11 +277,11 @@ export const Vacation = () => {
 export const BlogSection = () => {
   return (
    <>
-    <Flex className='grid grid-cols-3' direction={{base:'column', md:'row' }} gap={4}>
+    <Flex direction={{base:'column', md:'row' }} justifyContent={{md:'center'}} gap={4}>
       {blog.map((item, index) => (
         <div key={index}>
           <VStack >
-            <Box className='space-y-4 cursor-pointer  transition-all ease-in-out duration-500 hover:scale-105'>
+            <Box className='space-y-4 cursor-pointer  transition-all ease-in-out duration-500 hover:scale-105 lg:overflow-x-hidden'>
               <Image 
                 src={item.image}
                 rounded={'md'}
@@ -294,6 +294,7 @@ export const BlogSection = () => {
         </div>
       ))}
     </Flex>
+    
    </>
   )
 }
