@@ -1,4 +1,4 @@
-import { Box, Flex, Image, } from "@chakra-ui/react"
+import { Box, Flex, Image, Text } from "@chakra-ui/react"
 import { GrFacebookOption } from 'react-icons/gr'
 
 const Footer = () => {
@@ -7,17 +7,21 @@ const Footer = () => {
       <Box>
         <Flex justifyContent={'center'}>
             <Box >
-               <Flex justifyContent={'center'}>
-                <h1 className="font-bold">Trabook
-                 <span className="inline-flex ">
-                    <Image 
-                        src="/Images/logo.png"
-                        alt="logo"
-                        w={{base:'12px', md:'16px'}}
-                    />
-                 </span>
-                </h1>
-               </Flex> 
+               {/* logo */}
+         <Flex alignItems={'center'} justifyContent={'space-between'} gap={2} mb={{base:4, md:0}}>
+           <Text fontWeight={'bold'} fontSize={{base:'sm',
+             md:'xl',}}>
+            Trabook 
+          <span className='inline-flex px-2  items-center'>
+             <Image 
+             cursor={'pointer'}
+             src='/Images/logo.png'
+             alt='logo'
+             w={{base:4, md:5}}
+          />
+          </span> 
+         </Text>
+      </Flex>
                <p className="text-[12px]">Book your trip in minutes, get full <br /> Control for much longer.</p>
                <Flex>
                  <Box bg={'white'} rounded={'full'} boxSize={{base:'20px'}} justifyItems={'center'} p={0.5}>

@@ -19,7 +19,7 @@ export const PageButton = () => {
   return (
     <>
        {/* buttons */}
-     <Button bg={'orange.orange'} w={{base:12, md:32}}  size={{base:'xs', md:'md'}} _hover={{bg:'orange.400'}} color={'white'} ><p className='text-[6px] lg:text-[10px]'>Explore Now</p></Button>
+     <Button bg={'orange.orange'} w={{base:12, md:32}} h={{base:2, sm:5, md:8}}  size={{base:'xs', sm:'sm', md:'xl'}} _hover={{bg:'orange.400'}} color={'white'} ><p className='text-[5px] lg:text-[10px]'>Explore Now</p></Button>
     </>
   )
 }
