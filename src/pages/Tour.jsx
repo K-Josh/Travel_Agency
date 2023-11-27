@@ -16,7 +16,7 @@ const Tour = () => {
             />
          </Box>
          </Flex>
-         <Text fontSize={{base:'sm', md:'20px'}}  className="text-center w-[20rem]">Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!  
+         <Text fontSize={{base:'sm', md:'20px'}}  className="text-center w-[20rem] lg:w-[32rem]">Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!  
          </Text>
          <Vacation />
         </VStack>
